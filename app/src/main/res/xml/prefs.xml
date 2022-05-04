@@ -1,0 +1,29 @@
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings1">
+
+    <PreferenceCategory
+        android:title="First Category"><ListPreference
+            android:title="Koliko je 1+1?"
+            android:summary="Izaberi odgovor"
+            android:key="chosenColor"
+            android:defaultValue="Black"
+            android:entries="@array/odgovori"
+         android:entryValues="@array/odgovori" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+
+        android:summary="Username and password information"
+
+
+        android:title="Univerzitet Info">
+<Preference
+    android:title="Pref"
+    android:fragment="com.example.dz04.PrefUniversityImpl"
+  />
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

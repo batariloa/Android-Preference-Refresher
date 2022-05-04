@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DZ04</string>
+    <string-array name="odgovori">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>
