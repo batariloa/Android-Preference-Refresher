@@ -1,18 +1,33 @@
 package com.example.dz04
 
-import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
-import android.view.MenuItem
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
+import androidx.preference.PreferenceManager
+
 
 class MainActivity : AppCompatActivity(), PreferenceFragmentCompat.OnPreferenceStartFragmentCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val ime = findViewById<TextView>(R.id.tv_ime)
+
+        val adresa = findViewById<TextView>(R.id.tv_adresa)
+
+
+        var sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
+
+
+
+        ime.text = sharedPreferences.getString("ime","Default name")
+        adresa.text = sharedPreferences.getString("adresa", "Default adress")
+
+
+
 
     }
 

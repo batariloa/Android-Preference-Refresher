@@ -5,13 +5,12 @@
 
     <EditTextPreference
         android:defaultValue="Default value"
-        android:key="edit_text_preference_1"
+        android:key="ime"
         android:singleLine="true"
         android:title="Ime univerziteta" />
     <EditTextPreference
         android:defaultValue="Default value"
-        android:key="edit_text_preference_2"
-
+        android:key="adresa"
         android:singleLine="true"
         android:title="Adresa univerziteta" />
 </PreferenceScreen>

@@ -14,15 +14,11 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-
         android:summary="Username and password information"
-
-
         android:title="Univerzitet Info">
-<Preference
+    <Preference
     android:title="Pref"
-    android:fragment="com.example.dz04.PrefUniversityImpl"
-  />
+    android:fragment="com.example.dz04.PrefUniversityImpl" />
 
 
     </PreferenceCategory>
